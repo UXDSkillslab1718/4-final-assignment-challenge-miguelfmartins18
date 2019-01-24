@@ -1,57 +1,173 @@
+/* COLOR PALLETE
+#E8E6DC -  Platinum
+#242423 - Raisin Black
+#84ACCE - Light Cobalt Blue
+#FFFFFF - White
+
+*/
+
+
+/* GLOBAL STYLES*/
+
 html{
-    margin:0;
-    padding: 0;
-    width: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 
 body{
-    background: black;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #84ACCE;
+    cursor: pointer;
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+    margin-top:0;
+}
+
+h3{
+    margin: 0;
+}
+
+.wrap{
+    max-width: 950px;   
+    margin: 0 auto;
+    padding: 60px 30px;
+    overflow: auto;
+}
+
+.col-narrow{
+    width: 30%;
+    float: left; 
+}
+
+.col-wide{
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 179px;    
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.btn{
+    text-decoration: none;
+    background: white;
+    color: #242423; 
+    padding: 10px;
+    display: inline-block;
+}
+/* HEADER AND FOOTER*/
+
+header, footer{
+    background: #242423;
+    color: white;
+}
+
+/* header */
+.profileImg{
+    border-radius: 50%;   
+}
+
+.verticalAlign{
+    padding-top:10%;
+}
+
+.download{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header{
+    padding-top:50px;
+    position: relative;
+}
+
+header h1, header h2{
+    margin:0;
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
+
+.info a{
+    padding: 10px;
+    display: inline-block;
+}
+.fa-at{
+    font-size: 20px;
+}
+
+.fa-linkedin{
+    font-size: 20px;
+}
+
+/* BODY */
+
+/* Navigation */
+
+nav{
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 
-/* 
-   -------------------------
-        INTRO ANIMATION
-   -------------------------
-                                */
-.intro{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
+nav a{
+    display: inline-block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #242423;
+}
+/* WORK EXPERIENCE*/
+
+.work{
+    background: #E8E6DC;
 }
 
-path{
-    stroke: #ffffff;
-    fill: #ffffff;
-    stroke-dasharray: 2000;
-    opacity: 10;
-    animation: animate 3s cubic-bezier(.17, .67, .92, .82);
+h3 ~ p{
+    margin: 0;
 }
 
-@keyframes animate {
-    0%{
-        opacity: 0;
-        fill: none;
-        stroke-dashoffset: 2000;
-    }
+.job-description{
+    margin-bottom: 25px;
+}
+.job-description p:first-of-type{
+    margin-top: 0;
+}
+/* EDUCATION*/
 
-    30%{
-        opacity: 0;
-        fill: none;
-        stroke-dashoffset: 2000;
-    }
+.education{
+    background: linear-gradient(rgba(35, 35, 36, 0.8), rgba(35, 35, 36, 0.5)),
+    url(../images/hilthart-pedersen-602164-unsplash.jpg) no-repeat fixed;
+    background-size: cover;
+    color: white;
+}
 
-    90%{
-        fill: rgba(255, 255, 255, 0);
-    }
-
-    100%{
-        opacity: 10; 
-        fill: rgba(255, 255, 255, 1);
-        stroke-dashoffset: 0;
-    }
+p + h3{
+    margin-top:30px;
 }
