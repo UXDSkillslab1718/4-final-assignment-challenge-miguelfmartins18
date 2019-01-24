@@ -5,7 +5,22 @@
 #FFFFFF - White
 
 */
+:root{
+    --platinum: #E8E6DC;
+}
 
+/* iPad */
+@media screen and (max-width: 992px) {
+    body {
+    }
+  }
+
+  /* iPhone */
+  @media screen and (max-width: 600px) {
+    body {
+      
+    }
+  }
 
 /* GLOBAL STYLES*/
 
@@ -146,7 +161,7 @@ nav a{
 /* WORK EXPERIENCE*/
 
 .work{
-    background: #E8E6DC;
+    background: var(--platinum);
 }
 
 h3 ~ p{
