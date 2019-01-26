@@ -51,8 +51,9 @@ table {
 #FFFFFF - White
 
 */
-:root{
+:root {
     --platinum: #E8E6DC;
+    --blue: #84ACCE;
 }
 
 /* iPad 
@@ -72,17 +73,19 @@ table {
 
 /* GLOBAL STYLES*/
 
-html{
+html {
     box-sizing: border-box;
     font-size: 16px;
 
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
     margin: 0;
 }
@@ -93,45 +96,45 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #84ACCE;
     cursor: pointer;
 }
 
 
-h1{
+h1 {
     font-size: 3.125rem;
 }
 
-h2{
+h2 {
     font-size: 1.875rem;
-    margin-top:0;
+    margin-top: 0;
 }
 
-h3{
+h3 {
     margin: 0;
 }
 
-.wrap{
-    max-width: 950px;   
+.wrap {
+    max-width: 950px;
     margin: 0 auto;
     padding: 60px 30px;
     overflow: auto;
 }
 
-.col-narrow{
+.col-narrow {
     width: 30%;
-    float: left; 
+    float: left;
 }
 
-.col-wide{
+.col-wide {
     width: 70%;
     float: left;
     padding-left: 20px;
-    min-height: 179px;    
+    min-height: 179px;
 }
 
-.job-description a{
+.job-description a {
     color: black;
 }
 
@@ -140,78 +143,84 @@ h3{
     color: #84ACCE;
 }
 
-.fas.fa-external-link-alt{
-    margin-right: 2rem ;
+.fas.fa-external-link-alt {
+    margin-right: 2rem;
 }
-.uppercase{
+
+.uppercase {
     text-transform: uppercase;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     background: white;
-    color: #242423; 
+    color: #242423;
     padding: 10px;
     display: inline-block;
 }
+
 /* HEADER AND FOOTER*/
 
-header, footer{
+header,
+footer {
     background: #242423;
     color: white;
 }
 
 /* header */
-.logo{
+.logo {
     background: transparent url('../images/logo.svg') no-repeat top center;
     background-size: 30px;
     height: 30px;
     width: 30px;
-    padding:0;
+    padding: 0;
 }
+
 .logo:hover,
 .logo:active,
-.logo:focus{
+.logo:focus {
     background: transparent url('../images/logo_hover.svg') no-repeat top center;
     background-size: 30px;
 }
 
-.profileImg{
-    border-radius: 50%;   
+.profileImg {
+    border-radius: 50%;
 }
 
-.verticalAlign{
-    padding-top:10%;
+.verticalAlign {
+    padding-top: 10%;
 }
 
-.download{
+.download {
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-header{
+header {
     position: relative;
 }
 
-header h1, header h2{
-    margin:0;
+header h1,
+header h2 {
+    margin: 0;
 }
 
 /* footer */
-footer{
+footer {
     text-align: center;
 }
 
-.info a{
+.info a {
     padding: 10px;
     display: inline-block;
 }
-.fa-at{
+
+.fa-at {
     font-size: 1.25rem;
 }
 
-.fa-linkedin{
+.fa-linkedin {
     font-size: 1.25rem;
 }
 
@@ -219,7 +228,7 @@ footer{
 
 /* Navigation */
 
-nav{
+nav {
     text-align: center;
     background: white;
     margin: auto;
@@ -228,7 +237,7 @@ nav{
 
 
 
-nav a{
+nav a {
     display: inline-block;
     margin: auto;
     padding: 15px 20px;
@@ -237,66 +246,70 @@ nav a{
     color: #242423;
     vertical-align: middle;
 }
-nav a:first-child{
+
+nav a:first-child {
     margin: 0px 20px;
 }
 
-nav a.active{
+nav a.active {
     color: #84ACCE;
 }
+
 /* WORK EXPERIENCE*/
 
-.work{
+.work {
     background: var(--platinum);
 }
 
-h3 ~ p{
+h3~p {
     margin: 0;
 }
 
-.job-description{
+.job-description {
     margin-bottom: 25px;
 }
-.job-description p:first-of-type{
+
+.job-description p:first-of-type {
     margin-top: 0;
 }
+
 /* EDUCATION*/
 
-.education{
+.education {
     background: linear-gradient(rgba(35, 35, 36, 0.8), rgba(35, 35, 36, 0.5)),
-    url(../images/hilthart-pedersen-602164-unsplash.jpg) no-repeat fixed;
+        url(../images/hilthart-pedersen-602164-unsplash.jpg) no-repeat fixed;
     background-size: cover;
     color: white;
 }
 
-p + h3{
-    margin-top:30px;
+p+h3 {
+    margin-top: 30px;
 }
 
 /* STARBUCKS */
-figure{
+figure {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
-.col-fifty{
-    width:45%;
+.col-fifty {
+    width: 45%;
     padding: 1rem;
     display: inline-block;
-    margin:auto;
+    margin: auto;
 }
 
-.col-hundred{
-    width:90%;
+.col-hundred {
+    width: 90%;
     padding: 1rem;
     display: inline-block;
-    margin:auto;
+    margin: auto;
 }
 
 
-.wrapStar{
-    max-width: 950px;   
+.wrapStar {
+    max-width: 950px;
     margin: 0 auto;
     padding: 60px 30px;
     overflow: auto;
@@ -305,15 +318,49 @@ figure{
 
 /* Uni Proj */
 
-header{
-    background:none;
-}
+/* header {
+    background: none;
+} */
 
-.titleProject{
+.titleProject {
+    background-color: #E8E6DC;
     color: black;
     padding-bottom: 20px;
 }
 
-.wrapStar p{
+.titleProject h3 {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.wrapStar>p {
+    text-align: center;
+    font-style: italic;
+}
+
+.readMore {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.readMore:hover {
+    background: var(--blue);
+    color: white;
+}
+
+.back {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
     text-align: left;
+    margin-left: 37px;
+    display: table;
+    color: #242423;
+}
+
+
+.wrapStar p.detailText {
+    text-align: left !important;
+    display: block;
 }
