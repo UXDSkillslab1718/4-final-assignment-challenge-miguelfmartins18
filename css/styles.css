@@ -87,6 +87,7 @@ body{
     margin: 0;
 }
 
+
 a {
     color: white;
     text-decoration: none;
@@ -115,7 +116,7 @@ h3{
     max-width: 950px;   
     margin: 0 auto;
     padding: 60px 30px;
-    overflow: auto;˙
+    overflow: auto;
 }
 
 .col-narrow{
@@ -238,6 +239,10 @@ nav a{
 }
 nav a:first-child{
     margin: 0px 20px;
+}
+
+nav a.active{
+    color: #84ACCE;
 }
 /* WORK EXPERIENCE*/
 
