@@ -302,3 +302,18 @@ figure{
     overflow: auto;
     text-align: center;
 }
+
+/* Uni Proj */
+
+header{
+    background:none;
+}
+
+.titleProject{
+    color: black;
+    padding-bottom: 20px;
+}
+
+.wrapStar p{
+    text-align: left;
+}
