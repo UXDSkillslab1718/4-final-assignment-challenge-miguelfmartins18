@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-    color: #84ACCE;
+    color: var(--blue);
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ h3 {
 
 .job-description a:hover,
 .job-description a:active {
-    color: var(--platinum);
+    color: var(--blue);
 }
 
 .fas.fa-external-link-alt {
@@ -196,7 +196,8 @@ nav a:first-child {
 }
 
 nav a.active {
-    color: var(--platinum);
+    color: var(--blue);
+    ;
 }
 
 /* WORK EXPERIENCE*/
