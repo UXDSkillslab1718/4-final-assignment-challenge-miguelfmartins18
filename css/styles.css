@@ -243,7 +243,9 @@ figure {
     padding: 1rem;
     display: inline-block;
     margin: auto;
+
 }
+
 
 .col-hundred {
     width: 90%;
@@ -315,7 +317,6 @@ figure {
     color: var(--white);
     padding: 10px 25px;
     border-radius: 5px;
-    background-color: #562b9d;
     margin: 20px 0;
 }
 
